@@ -1,1 +1,3 @@
-Authors: Krystin Sinclair, Jessica Fogerty and Henry Tappa
+# Authors:
+
+Krystin Sinclair, Jessica Fogerty, Henry Tappa
