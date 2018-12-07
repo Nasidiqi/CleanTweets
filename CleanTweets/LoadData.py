@@ -1,4 +1,4 @@
-def load_data('data'):
-    df= pd.read_excel('data')
+def load_data(path):
+    df= pd.read_excel(path)
     return(df)
 
