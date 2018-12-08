@@ -5,15 +5,16 @@ from drop_column_remove_non_english import dropcolsremovenoneng
 from tweet_sentiment import tweet_sentiment
 
 def main():
+    global tweets_df
     tweets_df = load_data()
     tweets_df = clean_tweet_removepattern(tweets_df)
     tweets_df = remove_stop_words(tweets_df)
     tweets_df = tokenizeandstem(tweets_df)
     tweets_df = dropcolsremovenoneng(tweets_df)
     tweets_df = tweet_sentiment(tweets_df)
+    return tweets_df
 
 if __name__ == '__main__':
     main()
-main()
 
-tweets = main()
+main()

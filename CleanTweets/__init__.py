@@ -1,5 +1,7 @@
 '''cleantweets
-    This package does a thing.
+    This package, takes an excel file (of tweets) and cleans them in order to prepare for sentiment analysis.
+    It then performs the sentiment analysis returning polarity and subjectivity in a tuple. These are 
+    float variables.
 '''
 
 __author__ = 'Krystin Sinclair, Jessica Fogerty, Henry Tappa'
