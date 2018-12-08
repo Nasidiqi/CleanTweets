@@ -1,7 +1,8 @@
 from nltk.stem.porter import *
 
 def tokenizeandstem(df):
-    """This function tokenizes the tweets and stems them and then joins them back together."""
+    """This function tokenizes the tweets and stems them and then
+    joins them back together."""
     tokenized_tweet = df['tidy_tweet'].apply(lambda x: x.split())
     stemmer = PorterStemmer()
     tokenized_tweet = tokenized_tweet.apply(lambda x: [stemmer.stem(i) for i in x])
