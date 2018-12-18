@@ -4,7 +4,6 @@ from tokenize_and_stem import tokenize_and_stem
 from sentiment_analysis import sentiment_analysis
 
 def main():
-    global tweets_df
     tweets_df = load_data()
     tweets_df = remove_pattern(tweets_df)
     tweets_df = remove_stop_words(tweets_df)
